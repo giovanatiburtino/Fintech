@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: #16423C;
+}
+
+.sidebar:hover{
+    width: 300px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover, .active{
+    background: #C4DAD2;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span{
+    overflow: hidden;
+}
+
+.menu a i{
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.main--content{
+    position: relative;
+    background: #E9EFEC;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header-title{
+   color: #6A9C89;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search--box{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: #6A9C89;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input{
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover{
+    transform: scale(1.2)
+}
+
+/* card container */
+.card--container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 4rem;
+}
+
+.card--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main--title{
+    color: #6A9C89;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.payment--card {
+    background: #fff;
+    border: 2px solid #E9EFEC;
+    border-radius: 15px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment--card:hover{
+    transform: translateY(-5px)
+}
+
+.card--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.amount--value{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.icon{
+    color: #fff;
+    padding: 1rem;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: #dc3545;
+}
+
+.card-detail{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.dark-green{ 
+    background: #16423C;
+}
+
+.table-goals thead{
+    background: #fff;
+    color:#000000;
+}
+
+.table-goals th, .table-goals td{
+    padding: 0 2rem;
+}
+
+.table-goals th{
+    padding-bottom: 1rem;
+}
+
+.table-goals tbody{
+    background-color: #fff;
+}
+
+.table-goals td{
+    border-bottom: 1px solid #777777;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* tabular section */
+
+.tabular--wrapper{
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table-container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background:#fff;
+    color: #000000;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody{
+    background: #E9EFEC;
+}
+
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #000000;
+}
+
+tbody tr:nth-child(odd){
+    background: #fff;
+}
+
+.table-container button{
+    color: #16423C;
+    background: none;
+    cursor: pointer;
+}
+
+.table-container button:hover{
+    color: #6A9C89;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+td i{
+    margin: 0 2rem;    
+    font-size: 1.5rem;
+}
+
+
+
